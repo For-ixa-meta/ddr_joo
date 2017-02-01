@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           sengokuixa-meta
 // @description    戦国IXAを変態させるツール
-// @version        1.6.2.1'b
+// @version        1.6.2.1'
 // @namespace      sengokuixa-meta
 // @include        http://*.sengokuixa.jp/*
 // @require        https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js
@@ -2946,7 +2946,7 @@ var Append = {
 								union_type  : 5,
 								exec_btn    : 1,
 								sub_id      : '',
-								ad_id       : 38,
+								ad_id       : 43,
 							};
 							// ad_idはイベント期間限定っぽい
 
@@ -2998,6 +2998,7 @@ var Append = {
 			Deck.filter.conditions = [];
 			Deck.filter.conditions.push( { condition: ['name', 'ルルハ'] } );
 			pagelist = pagelist.concat( Deck.targetList() );
+
 
 			// 一般武将
 			Deck.filter.conditions = [];
@@ -14904,7 +14905,7 @@ serverSelected: function() {
 
 	// いいのかな...(問題が出るまではこのままの予定)
 	switch( chapter.toInt() ) {
-		case 1: chapter = 10; break;
+		case 1: chapter = 13; break;
 		case 2: chapter = 11; break;
 		case 3: chapter = 12; break;
 			
